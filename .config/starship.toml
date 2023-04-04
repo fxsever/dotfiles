@@ -74,3 +74,6 @@ style_root = 'white bold'
 format = '[$user at]($style) '
 disabled = false
 show_always = true
+
+[cmd_duration]
+format = ' took [$duration](bold yellow)'
