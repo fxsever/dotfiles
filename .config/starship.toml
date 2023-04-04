@@ -1,0 +1,76 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[character]
+format = '$symbol '
+
+[container]
+symbol = 'Container'
+style = 'bold blue dimmed'
+format = '[$symbol \[$name\]]($style) '
+
+[docker_context]
+symbol = 'Docker'
+
+[directory]
+truncation_length = 12
+truncate_to_repo = false
+read_only = 'R/O'
+read_only_style = 'red'
+format = '[$path]($style)[$read_only]($read_only_style) '
+
+[git_branch]
+symbol = ''
+always_show_remote = false
+
+[git_commit]
+tag_symbol = 'TAG'
+
+[git_state]
+
+[git_status]
+format = '([\[$ahead_behind\] \( $modified $untracked $deleted $conflicted $stashed $renamed $staged \)]($style))'
+up_to_date = 'up_to_date'
+conflicted = 'conflicted:${count}'
+ahead = 'ahead:${count}'
+behind = 'behind:${count}'
+diverged = 'diverged:${count}'
+untracked = 'untracked:${count}'
+stashed = 'stashed:${count}'
+modified = 'modified:${count}'
+staged = 'staged:${count}'
+renamed = 'renamed:${count}'
+deleted = 'deleted:${count}'
+style = 'bold red'
+
+[golang]
+symbol = 'GO'
+
+[hostname]
+ssh_only = false
+ssh_symbol = ''
+trim_at = ''
+format = '[$hostname](bold dimmed green):'
+
+[kubernetes]
+disabled = true
+
+[python]
+python_binary = ['python3']
+
+[shell]
+disabled = true
+format = '[$indicator]($style) '
+style = 'grey bold'
+bash_indicator = 'bsh'
+zsh_indicator = 'zsh'
+
+[username]
+style_user = 'grey bold'
+style_root = 'white bold'
+format = '[$user at]($style) '
+disabled = false
+show_always = true
