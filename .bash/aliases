@@ -15,3 +15,5 @@ alias chgrp="chgrp --preserve-root"
 alias sudo="sudo "
 alias top="htop"
 alias gst="git status"
+alias python='python3'
+alias g="git"
