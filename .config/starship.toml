@@ -8,12 +8,12 @@ add_newline = true
 format = '$symbol '
 
 [container]
-symbol = 'Container'
+symbol = 'Container '
 style = 'bold blue dimmed'
 format = '[$symbol \[$name\]]($style) '
 
 [docker_context]
-symbol = 'Docker'
+symbol = 'Docker '
 
 [directory]
 truncation_length = 12
@@ -27,12 +27,13 @@ symbol = ''
 always_show_remote = false
 
 [git_commit]
-tag_symbol = 'TAG'
+tag_symbol = 'TAG '
 
 [git_state]
 
 [git_status]
-format = '([\[$ahead_behind\] \( $modified $untracked $deleted $conflicted $stashed $renamed $staged \)]($style))'
+# format = '([\[$ahead_behind\] \( $modified $untracked $deleted $conflicted $stashed $renamed $staged \)]($style) )'
+format = '([\[$ahead_behind\] \( $modified \)]($style) )'
 up_to_date = 'up_to_date'
 conflicted = 'conflicted:${count}'
 ahead = 'ahead:${count}'
@@ -47,7 +48,7 @@ deleted = 'deleted:${count}'
 style = 'bold red'
 
 [golang]
-symbol = 'GO'
+symbol = 'Go '
 
 [hostname]
 ssh_only = false
