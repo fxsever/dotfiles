@@ -1,19 +1,13 @@
 opts_enable="\
-    autocd \
     cdable_vars \
     cdspell \
     checkhash \
     checkwinsize \
     cmdhist \
-    complete_fullquote \
-    direxpand \
-    dirspell \
-    expand_aliases \
     extglob \
     extquote \
     failglob \
     force_fignore \
-    globstar \
     gnu_errfmt \
     histappend \
     histreedit \
@@ -22,28 +16,14 @@ opts_enable="\
     huponexit \
     interactive_comments \
     lithist \
-    localvar_unset \
     progcomp \
-    progcomp_alias \
     promptvars \
     sourcepath \
 "
 opts_disable="\
-    assoc_expand_once \
-    checkjobs \
     compat31 \
-    compat32 \
-    compat40 \
-    compat41 \
-    compat42 \
-    compat43 \
-    compat44 \
     dotglob \
     extdebug \
-    globasciiranges \
-    inherit_errexit \
-    lastpipe \
-    localvar_inherit \
     mailwarn \
     no_empty_cmd_completion \
     nocaseglob \
